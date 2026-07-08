@@ -1,5 +1,5 @@
 # CATopalian JS DOD
-This JavaScript app is a hybrid DOD (data oriented design) approach utilizing OOO for highly efficient simulations and game world designs.
+This JavaScript app is a hybrid DOD (data oriented design) approach utilizing OoO (Object of Objects) for highly efficient simulations and game world designs.
 
 ---
 
