@@ -6,6 +6,7 @@ function whenLoaded()
 
     // The ID string becomes the exact address in the world map!
     world['felix'] = makeCat('felix', 'Felix', 'rgb(0, 255, 255)', 100, 100, stepPingPong);
+
     world['tom'] = makeCat('tom', 'Tom', 'rgb(0, 0, 255)', 200, 100, stepCircle);
 
     // Spawning an army of 100 cats directly into the object map
@@ -27,6 +28,21 @@ function whenLoaded()
 
     initObjects(world);
     gameLoop();
+
+    //----//
+
+    // Keyboard Controls
+    document.addEventListener('keydown', function(event)
+    {
+        // SAVE WORLD
+        if (event.key === 's')
+        {
+            let savedLevel = JSON.stringify(world, null, 2);
+
+            console.log('World Saved!');
+            console.log(savedLevel);
+        }
+    });
 }
 
 //----//
